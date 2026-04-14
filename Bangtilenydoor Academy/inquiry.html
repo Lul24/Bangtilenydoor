@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquiry | Bangtilenydoor Academy - Start Your Global Journey</title>
+  <meta name="description" content="Apply for scholarship guidance and student support at Bang-Ti-Lenydoor Academy. Start your journey to global education today.">
+
+    <!-- ============================================
+  FAVICON FOR ALL DEVICES (Option 2 - Keep favicon_io folder)
+  ============================================ -->
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon_io/logo.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  
+  <!-- Apple Touch Icon (for iOS devices) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  
+  <!-- Android Chrome -->
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Sticky CTA + WhatsApp -->
+<div class="sticky-cta">
+  <a href="https://wa.me/+256768864425" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i> Need Help?
+  </a>
+  <a href="inquiry.html" class="sticky-inquiry">
+    <i class="fas fa-paper-plane"></i> Apply Now
+  </a>
+</div>
+
+<header class="header">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <div class="logo-wrapper">
+          <img src="assets/logo.png" alt="Bang-Ti-Lenydoor Academy Logo" class="logo-img" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="logo-icon-fallback" style="display: none;">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="logo-text">
+            <h1>Bangtilenydoor Academy </h1>
+            <span>Global access · funded futures</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="mobile-toggle" id="mobileToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="scholarships.html">Scholarships</a>
+      <a href="impacts.html">Impacts</a>
+      <a href="contact.html">Contact</a>
+      <a href="inquiry.html" class="active btn-outline-nav">Inquiry</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section with Background Image -->
+  <section class="inquiry-hero">
+    <div class="floating-shape floating-shape-1"></div>
+    <div class="floating-shape floating-shape-2"></div>
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <div class="hero-badge">
+            <i class="fas fa-graduation-cap me-2"></i> Your Future Starts Here
+          </div>
+          <h1 class="hero-title">Ready to <span class="highlight-accent">Transform Your Future?</span></h1>
+          <p class="hero-description">Take the first step toward your global education journey. Fill out the form below and our scholarship experts will guide you every step of the way.</p>
+          <div class="hero-trust-badges">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Form Section -->
+  <section class="inquiry-section">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Left Column - Form -->
+        <div class="col-lg-7">
+          <div class="form-card">
+            <div class="form-header">
+              <div class="benefit-icon">
+                <i class="fas fa-pen-fill"></i>
+              </div>
+              <h2>Student Interest Form</h2>
+              <p>Complete this form and get personalized scholarship matches within 24 hours</p>
+            </div>
+            
+            <!-- Progress Steps -->
+            <div class="progress-steps">
+              <div class="step-item">
+                <div class="step-circle active">1</div>
+                <div class="step-label active">Personal Info</div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle">2</div>
+                <div class="step-label">Academic Details</div>
+              </div>
+              <div class="step-item">
+                <div class="step-circle">3</div>
+                <div class="step-label">Submit</div>
+              </div>
+            </div>
+            
+            <form id="inquiryFormPage">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" id="fullNamePage" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email Address *</label>
+                  <input type="email" id="emailAddressPage" class="form-control" placeholder="you@example.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Phone Number</label>
+                  <input type="tel" id="phonePage" class="form-control" placeholder="+1234567890">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Country of Residence *</label>
+                  <select id="countryPage" class="form-select" required>
+                    <option value="">Select your country</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Canada</option>
+                    <option>Australia</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                    <option>India</option>
+                    <option>Nigeria</option>
+                    <option>Kenya</option>
+                    <option>Rwanda</option>
+                    <option>Egypt</option>
+                    <option>Ghana</option>
+                    <option>South Africa</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Current Education Level *</label>
+                  <select id="educationLevelPage" class="form-select" required>
+                    <option value="">Select education level</option>
+                    <option>High School (9-12)</option>
+                    <option>High School Graduate</option>
+                    <option>Diploma</option>
+                    <option>Bachelor's Degree (In Progress)</option>
+                    <option>Bachelor's Degree (Completed)</option>
+                    <option>Master's Degree (In Progress)</option>
+                    <option>Master's Degree (Completed)</option>
+                    <option>PhD/Doctorate</option>
+                    <option>Professional Certificate</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Area of Interest *</label>
+                  <select id="interestTypePage" class="form-select" required>
+                    <option value="">Select interest area</option>
+                    <option value="fully_funded">Fully Funded Scholarship</option>
+                    <option value="partial">Partial Scholarship</option>
+                    <option value="online_degree">Online Degree Program</option>
+                    <option value="distance">Distance Learning</option>
+                  </select>
+                </div>
+                
+                <div class="col-12">
+                  <label class="form-label">Academic Background & Goals *</label>
+                  <textarea id="messagePage" rows="5" class="form-control" placeholder="Tell us about:
+• Your academic background and GPA
+• Standardized test scores (IELTS, TOEFL, GRE, GMAT if any)
+• Your dream universities/programs
+• Any specific questions or concerns..." required></textarea>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">How did you hear about us?</label>
+                  <select id="referralPage" class="form-select">
+                    <option>Google Search</option>
+                    <option>Instagram/Facebook</option>
+                    <option>LinkedIn</option>
+                    <option>YouTube</option>
+                    <option>Friend/Family</option>
+                    <option>University Partner</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <!-- FIXED CHECKBOX with flex container for better click detection -->
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" id="termsCheck">
+                    <label for="termsCheck" style="cursor: pointer;">
+                      I agree to receive scholarship matches and expert guidance. I understand my information is secure and will not be shared.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane me-2"></i> Submit Application →
+                  </button>
+                </div>
+                <div id="formFeedbackPage" class="text-center mt-3"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <!-- Right Column - Benefits & Info -->
+        <div class="col-lg-5">
+          <div class="benefits-card">
+            <h3><i class="fas fa-star me-2"></i> Why Students Love Us</h3>
+            <div class="benefits-list">
+              <div class="benefit-item">
+                <div class="benefit-icon-small">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div>
+                  <strong>Fast Matching</strong><br>
+                  <small>Get matched within 24 hours</small>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon-small">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div>
+                  <strong>95% Success Rate</strong><br>
+                  <small>Proven track record</small>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon-small">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <div>
+                  <strong>75+ University Partners</strong><br>
+                  <small>Global network</small>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon-small">
+                  <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <div>
+                  <strong>100% Free Guidance</strong><br>
+                  <small>No hidden fees ever</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <i class="fas fa-quote-left"></i>
+            <p>"Bang-Ti-Lenydoor Academy didn't just help me find a scholarship — they believed in my potential and guided me until I succeeded. Now I'm studying at my dream university in Germany!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <strong>David O. Changkouth</strong>
+                <small>DAAD Scholar, Germany</small>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-header">
+        <span class="section-badge">Got Questions?</span>
+        <h2>FAQs</h2>
+        <p>Everything you need to know about our scholarship guidance</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <i class="fas fa-clock"></i>
+          <h4>How long does it take to get a response?</h4>
+          <p>We respond to all inquiries within 24 hours. Most students receive their initial scholarship matches within 48 hours.</p>
+        </div>
+        <div class="faq-item">
+          <i class="fas fa-dollar-sign"></i>
+          <h4>Is there any cost for your services?</h4>
+          <p>Our initial consultation and scholarship matching service is completely free. We only charge for premium services if you choose to use them.</p>
+        </div>
+        <div class="faq-item">
+          <i class="fas fa-globe"></i>
+          <h4>Can you help students from any country?</h4>
+          <p>Yes! We have successfully helped students from over 40 countries worldwide secure scholarships and admissions.</p>
+        </div>
+        <div class="faq-item">
+          <i class="fas fa-graduation-cap"></i>
+          <h4>What types of scholarships do you help with?</h4>
+          <p>We help with fully funded scholarships, partial scholarships, assistantships, and merit-based awards for bachelor's, master's, and PhD programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="container text-center">
+      <h2>Don't Wait — Your Future Awaits</h2>
+      <p>Join thousands of successful students who trusted us with their global education journey.</p>
+      <a href="#top" class="btn-primary btn-large">Start Your Application Now →</a>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Bangtilenydoor Academy</h4>
+        <p style="margin-top: 1rem;">Empowering students worldwide with access to scholarships and global education.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="scholarships.html">Scholarships</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <div class="footer-links">
+          <a href="#">Scholarship Guide</a>
+          <a href="#">Application Tips</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form id="newsletterForm" style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+          <input type="email" id="newsEmail" placeholder="Your email" style="padding: 0.8rem; border-radius: 30px; border: none; flex: 1;">
+          <button type="submit" style="background: #f39c12; border: none; padding: 0.8rem 1.2rem; border-radius: 30px;">→</button>
+        </form>
+        <div id="newsMsg" style="margin-top: 0.5rem;"></div>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Bangtilenydoor Academy. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Mobile menu toggle
+  const mobileToggle = document.getElementById('mobileToggle');
+  const navLinks = document.getElementById('navLinks');
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+  }
+
+  // Smooth scroll for top link
+  document.querySelectorAll('a[href="#top"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  // Inquiry Form Submission with Backend Integration - FINAL FIXED VERSION
+  const inquiryForm = document.getElementById('inquiryFormPage');
+  const formFeedback = document.getElementById('formFeedbackPage');
+  
+  if (inquiryForm) {
+    inquiryForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // FORCE CHECKBOX UPDATE - Using getElementById for better performance
+      const termsCheckbox = document.getElementById('termsCheck');
+      
+      // Force re-check value (fix browser delay issue)
+      const isChecked = termsCheckbox ? termsCheckbox.checked : false;
+      
+      console.log("Checkbox found:", !!termsCheckbox);
+      console.log("Checkbox checked value:", isChecked);
+      
+      if (!isChecked) {
+        if (termsCheckbox) termsCheckbox.focus();
+        formFeedback.innerHTML = '<div class="alert alert-danger">⚠️ Please agree to the terms.</div>';
+        // Scroll to feedback message
+        formFeedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        return;
+      }
+      
+      const data = {
+        name: document.getElementById('fullNamePage').value,
+        email: document.getElementById('emailAddressPage').value,
+        phone: document.getElementById('phonePage').value,
+        country: document.getElementById('countryPage').value,
+        education_level: document.getElementById('educationLevelPage').value,
+        interest: document.getElementById('interestTypePage').value,
+        message: document.getElementById('messagePage').value,
+        referral: document.getElementById('referralPage').value
+      };
+      
+      // Basic validation for required fields
+      if (!data.name || !data.email || !data.message) {
+        formFeedback.innerHTML = '<div class="alert alert-danger">⚠️ Please fill all required fields.</div>';
+        return;
+      }
+      
+      if (!data.email.includes('@')) {
+        formFeedback.innerHTML = '<div class="alert alert-danger">⚠️ Please enter a valid email address.</div>';
+        return;
+      }
+      
+      // Show submitting indicator
+      formFeedback.innerHTML = '<div class="alert alert-info">⏳ Submitting your application...</div>';
+      
+      // Send data to backend
+      fetch("/Bangtilenydoor/backend/api/submit_inquiry.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+      .then(res => res.json())
+      .then(result => {
+        if (result.status === "success") {
+          formFeedback.innerHTML = '<div class="alert alert-success">✅ ' + result.message + '</div>';
+          inquiryForm.reset();
+          setTimeout(() => {
+            formFeedback.innerHTML = '';
+            // Optional: Redirect after success
+            // window.location.href = 'thankyou.html';
+          }, 5000);
+        } else {
+          formFeedback.innerHTML = '<div class="alert alert-danger">❌ ' + result.message + '</div>';
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        formFeedback.innerHTML = '<div class="alert alert-danger">❌ Server error. Please try again later.</div>';
+      });
+    });
+  }
+
+  // Newsletter Subscription
+  const newsForm = document.getElementById('newsletterForm');
+  const newsMsg = document.getElementById('newsMsg');
+  if (newsForm) {
+    newsForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('newsEmail').value;
+      if (email && email.includes('@')) {
+        newsMsg.innerHTML = '<span class="text-success">✅ Subscribed successfully!</span>';
+        newsForm.reset();
+        setTimeout(() => newsMsg.innerHTML = '', 5000);
+      } else {
+        newsMsg.innerHTML = '<span class="text-danger">⚠️ Please enter a valid email</span>';
+        setTimeout(() => newsMsg.innerHTML = '', 3000);
+      }
+    });
+  }
+</script>
+</body>
+</html>
