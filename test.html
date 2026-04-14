@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual Test Checklist</title>
+  <style>
+    body { font-family: 'Inter', sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+    h1 { color: #0a2b4e; }
+    .section { background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 12px; }
+    .checklist { list-style: none; padding: 0; }
+    .checklist li { padding: 10px; margin: 5px 0; background: white; border-radius: 8px; }
+    .status { display: inline-block; width: 30px; }
+    input[type="checkbox"] { margin-right: 10px; transform: scale(1.2); }
+    button { background: #3b82f6; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin-top: 20px; }
+    .progress { background: #e0e0e0; border-radius: 10px; height: 20px; margin: 20px 0; }
+    .progress-bar { background: #3b82f6; border-radius: 10px; height: 20px; width: 0%; transition: width 0.3s; }
+  </style>
+</head>
+<body>
+  <h1>🔧 Manual Test Checklist</h1>
+  <p>Check each item as you verify it works:</p>
+  
+  <div class="progress">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+  <div id="counter">0/25 completed</div>
+
+  <div class="section">
+    <h2>📄 Page Navigation</h2>
+    <ul class="checklist">
+      <li><input type="checkbox" class="check-item" data-category="nav"> <strong>Home page</strong> - index.html loads correctly</li>
+      <li><input type="checkbox" class="check-item" data-category="nav"> <strong>Programs page</strong> - programs.html loads correctly</li>
+      <li><input type="checkbox" class="check-item" data-category="nav"> <strong>Scholarships page</strong> - scholarships.html loads correctly</li>
+      <li><input type="checkbox" class="check-item" data-category="nav"> <strong>Impacts page</strong> - impacts.html loads correctly</li>
+      <li><input type="checkbox" class="check-item" data-category="nav"> <strong>Contact page</strong> - contact.html loads correctly</li>
+      <li><input type="checkbox" class="check-item" data-category="nav"> <strong>Inquiry page</strong> - inquiry.html loads correctly</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎨 CSS & Styling</h2>
+    <ul class="checklist">
+      <li><input type="checkbox" class="check-item" data-category="css"> <strong>CSS loads</strong> - Page has proper colors and styling</li>
+      <li><input type="checkbox" class="check-item" data-category="css"> <strong>Header styling</strong> - Navigation bar looks correct</li>
+      <li><input type="checkbox" class="check-item" data-category="css"> <strong>Footer styling</strong> - Footer appears at bottom of page</li>
+      <li><input type="checkbox" class="check-item" data-category="css"> <strong>Responsive design</strong> - Page looks good on mobile (resize browser)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🖼️ Images</h2>
+    <ul class="checklist">
+      <li><input type="checkbox" class="check-item" data-category="image"> <strong>Logo</strong> - Logo image appears in header</li>
+      <li><input type="checkbox" class="check-item" data-category="image"> <strong>Hero background 1</strong> - First hero slide image shows</li>
+      <li><input type="checkbox" class="check-item" data-category="image"> <strong>About section image</strong> - About page student image shows</li>
+      <li><input type="checkbox" class="check-item" data-category="image"> <strong>Student avatar images</strong> - Testimonial images show on impacts page</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>⚡ Interactive Features</h2>
+    <ul class="checklist">
+      <li><input type="checkbox" class="check-item" data-category="interactive"> <strong>Mobile menu</strong> - On mobile size, menu button works</li>
+      <li><input type="checkbox" class="check-item" data-category="interactive"> <strong>Hero slideshow</strong> - Background images change every 5 seconds</li>
+      <li><input type="checkbox" class="check-item" data-category="interactive"> <strong>Deadline timer</strong> - Countdown timer counts down</li>
+      <li><input type="checkbox" class="check-item" data-category="interactive"> <strong>Form validation</strong> - Forms show error if fields empty</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📱 Responsive Breakpoints</h2>
+    <ul class="checklist">
+      <li><input type="checkbox" class="check-item" data-category="responsive"> <strong>Desktop (1200px+)</strong> - Layout uses full width</li>
+      <li><input type="checkbox" class="check-item" data-category="responsive"> <strong>Tablet (768px-1199px)</strong> - Layout adjusts for tablet</li>
+      <li><input type="checkbox" class="check-item" data-category="responsive"> <strong>Mobile (below 768px)</strong> - Stacked layout, hamburger menu appears</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🔗 Links</h2>
+    <ul class="checklist">
+      <li><input type="checkbox" class="check-item" data-category="links"> <strong>Home link</strong> - Clicking Home goes to index.html</li>
+      <li><input type="checkbox" class="check-item" data-category="links"> <strong>Programs link</strong> - Clicking Programs goes to programs.html</li>
+      <li><input type="checkbox" class="check-item" data-category="links"> <strong>Scholarships link</strong> - Clicking Scholarships goes to scholarships.html</li>
+      <li><input type="checkbox" class="check-item" data-category="links"> <strong>Impacts link</strong> - Clicking Impacts goes to impacts.html</li>
+      <li><input type="checkbox" class="check-item" data-category="links"> <strong>Contact link</strong> - Clicking Contact goes to contact.html</li>
+      <li><input type="checkbox" class="check-item" data-category="links"> <strong>Inquiry button</strong> - Inquiry button works</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📊 Forms</h2>
+    <ul class="checklist">
+      <li><input type="checkbox" class="check-item" data-category="forms"> <strong>Quick inquiry form</strong> - Submits and shows success message</li>
+      <li><input type="checkbox" class="check-item" data-category="forms"> <strong>Contact form</strong> - Submits and shows success message</li>
+      <li><input type="checkbox" class="check-item" data-category="forms"> <strong>Newsletter signup</strong> - Subscribes and shows success message</li>
+    </ul>
+  </div>
+
+  <button id="resetBtn">Reset All</button>
+
+  <script>
+    const checkboxes = document.querySelectorAll('.check-item');
+    const progressBar = document.getElementById('progressBar');
+    const counter = document.getElementById('counter');
+    
+    function updateProgress() {
+      const total = checkboxes.length;
+      const checked = document.querySelectorAll('.check-item:checked').length;
+      const percent = (checked / total) * 100;
+      progressBar.style.width = percent + '%';
+      counter.textContent = `${checked}/${total} completed`;
+      
+      if (checked === total) {
+        counter.innerHTML += ' 🎉 All tests passed! Ready for backend!';
+      }
+    }
+    
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', updateProgress);
+      // Load saved state
+      const saved = localStorage.getItem(checkbox.id || checkbox.parentElement.textContent);
+      if (saved === 'true') checkbox.checked = true;
+      checkbox.addEventListener('change', () => {
+        localStorage.setItem(checkbox.id || checkbox.parentElement.textContent, checkbox.checked);
+      });
+    });
+    
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      checkboxes.forEach(cb => cb.checked = false);
+      localStorage.clear();
+      updateProgress();
+    });
+    
+    updateProgress();
+  </script>
+</body>
+</html>
